@@ -1,0 +1,5 @@
+services:
+  loglore:
+    build: .
+    ports:
+      - "1116:80"

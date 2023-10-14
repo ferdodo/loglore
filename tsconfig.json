@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"noEmit": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"target": "es6",
+		"module": "nodenext",
+		"outDir": "dist",
+		"declaration": true,
+		"declarationDir": "dist",
+		"lib": [
+			"dom",
+			"es2015",
+			"es2018"
+		],
+		"baseUrl": ".",
+		"paths": {
+			"loglore": ["src/index"]
+		}
+	},
+	"exclude": [
+		"./**/*.spec.ts"
+	]
+}

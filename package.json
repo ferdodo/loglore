@@ -1,0 +1,28 @@
+{
+	"name": "loglore",
+	"version": "1.0.0",
+	"description": "Minimalistic frontend event store",
+	"main": "src/index.ts",
+	"author": "Thomas Riffard",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc && tsc-alias && esbuild --platform=browser --define:BROWSER_TARGET=true --minify --format=iife --bundle src/index.ts --outfile=./dist/loglore.browser.js && playwright test && typedoc --plugin typedoc-plugin-include-example src/index.ts && dprint check"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ferdodo/loglore"
+	},
+	"dependencies": {
+		"rxjs": "^7.8.1"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.38.1",
+		"@types/node": "^20.8.3",
+		"dprint": "^0.41.0",
+		"esbuild": "^0.19.4",
+		"tsc-alias": "^1.8.8",
+		"typedoc": "^0.25.1",
+		"typedoc-plugin-include-example": "^1.0.1",
+		"typescript": "^5.2.2"
+	}
+}
