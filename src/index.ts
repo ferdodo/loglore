@@ -3,7 +3,7 @@ import { saveEvent } from "./save-event";
 import { replayEvents } from "./replay-events";
 
 // @ts-ignore
-if (BROWSER_TARGET) {
+if (typeof BROWSER_TARGET !== "undefined" && BROWSER_TARGET) {
 	// @ts-ignore
 	globalThis.loglore = {
 		saveEvent,
