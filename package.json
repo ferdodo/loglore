@@ -1,6 +1,6 @@
 {
 	"name": "loglore",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": "Minimalistic frontend event store",
 	"main": "src/index.ts",
 	"author": "Thomas Riffard",
